@@ -14,29 +14,16 @@
 }
 
 .removeButton {
-  background: #222;
-  background: linear-gradient(#333, #222);
-  box-sizing: border-box;
-  border: 0px solid rgb(249, 1, 1);
+  background: transparent;
   border-radius: 50%;
+  border: 2px solid #131313;
   height: 32px;
-  margin-left: 30px;
-  padding: 0;
+  margin-right: 10px;
   position: relative;
   width: 33px;
 }
 
 .removeButton:hover,
 .removeButton:focus {
-  background: #292929;
-  background: linear-gradient(#393939, #292929);
-  color: #5f5;
-  outline: none;
-}
-
-.removeButton:active {
-  background: #292929;
-  background: linear-gradient(#393939, #292929);
-  box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
-  top: 1px;
+  background-color: rgb(37, 36, 37);
 }

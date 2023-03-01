@@ -7,7 +7,6 @@ export const ListContact = ({ contacts, onRemoveContact }) => {
     <ul className={ListModule.list}>
       {contacts.map(({ id, name, number }) => (
         <li key={id} className={ListModule.item}>
-          {name + ': ' + number}
           <button
             type="button"
             className={ListModule.removeButton}
@@ -16,6 +15,7 @@ export const ListContact = ({ contacts, onRemoveContact }) => {
           >
             <AddIcon width="45" height="45" />
           </button>
+          {name + ': ' + number}
         </li>
       ))}
     </ul>
