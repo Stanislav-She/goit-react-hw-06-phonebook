@@ -1,10 +1,11 @@
 import { addContact } from 'components/redux/sliceContacts';
 import { nanoid } from 'nanoid';
-import PropTypes from 'prop-types';
 import React from 'react';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import FormModule from './FormContact.module.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const FormContact = () => {
   const [name, setName] = useState('');
@@ -36,7 +37,10 @@ export const FormContact = () => {
       number: number,
       id: nanoid(),
     };
+    toast.success(`${contact.name} added to contacts.`);
     dispatch(addContact(contact));
+    setName('');
+    setNumber('');
   };
 
   return (
@@ -72,10 +76,7 @@ export const FormContact = () => {
           Add contact
         </button>
       </form>
+      <ToastContainer />
     </div>
   );
-};
-
-FormContact.propTypes = {
-  addContact: PropTypes.func.isRequired,
 };
