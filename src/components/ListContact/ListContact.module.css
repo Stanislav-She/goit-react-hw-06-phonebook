@@ -13,6 +13,11 @@
   font-size: 20px;
 }
 
+.alert {
+  width: fit-content;
+  color: rgb(234, 12, 12);
+}
+
 .removeButton {
   background: transparent;
   border-radius: 50%;

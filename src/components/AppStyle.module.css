@@ -2,14 +2,12 @@
   padding: 15px;
   margin: 70px auto 0px;
   width: 450px;
-
   border-radius: 13px;
   border: 5px solid #888;
   animation: glow 800ms ease-out infinite alternate;
   background: linear-gradient(#404a40, #222922);
   border-color: rgb(19, 155, 19);
-  box-shadow: 0 0 5px rgba(0, 255, 0, 0.2), inset 0 0 5px rgba(0, 255, 0, 0.1),
-    0 2px 0 #000;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.2), inset 0 0 5px rgba(0, 255, 0, 0.1);
   color: #efe;
   outline: none;
 }
